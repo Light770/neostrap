@@ -7,3 +7,27 @@ The syntax is based on bootstrap for the most part, some change have been made t
 Run the index.html to see what the classes may look like.
 
 Images are missing from the file, feel free to add your own to see a more accurate representation of the styles.
+
+## Changes to be added in the next month:
+
+-finished cards
+-Modals
+-Breadcrumbs
+-Navs
+-Navbars
+-Pagination
+-Popovers
+-Tables
+-Toasts
+-Timelines
+-Tooltips
+-Accordions
+-Carousels
+-E-Commerce
+-Icon boxes
+
+## Changes to be added in the futur:
+
+Dark mode, nice to have and shouldn't be that hard to put in place when the general layout is finished
+
+Multicolored styles, while trying to implement, I've been faced with results that are very poor when mixing a colored button on the (off)white background.

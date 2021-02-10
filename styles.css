@@ -1,0 +1,475 @@
+*{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+
+body{
+    background:#eeeeee;
+  }
+
+
+.button_container{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 150px;
+    width: 100vw;
+}
+
+/*neumorphic container */
+.neu-c{
+    background:#eeeeee;
+    box-shadow:  5px 5px 10px #bebebe,
+    -5px -5px 10px #ffffff;
+}
+
+
+/*neumorphic input container outer */
+.neu-i-c-o{
+    padding: 10px;
+    margin: 10px;
+}
+
+/*neumorphic input container inner */
+.neu-i-c-i{
+    margin-top: 15px;
+}
+
+
+/*
+============================================================================
+============================================================================
+============================================================================
+============================== Button Styling ==============================
+============================================================================
+============================================================================
+============================================================================
+*/
+
+.button{ /* button sizing parameters */
+    padding:1.3em;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    border-radius: 10px;
+}
+
+button:focus { outline: none; } /* remove outlines*/
+
+.neu-b { /*default button styling white neumorphic */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+    color: #4D3252;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+
+  }
+
+/* 1st part hover shine effect */
+.neu-b:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+/* 2nd part hover shine effect
+easing and timing params */
+.neu-b:hover:after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 1.2s, 0.15s;
+    transition-timing-function: ease;
+  }
+/*remove shine when active */
+.neu-b:active:after {
+    opacity: 0;
+  }
+
+/* active neumorphic push effect */
+.neu-b:active {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px #0001,
+    0px 0px 0px 0px #0001,
+    inset -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    inset -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    inset 7px 7px 20px 0px #0003,
+    inset 4px 4px 5px 0px #0001;
+}
+
+/*
+============================================================================
+============================================================================
+============================================================================
+============================= Selector Styling =============================
+============================================================================
+============================================================================
+============================================================================
+*/
+.neu-s select{
+    display: none;
+}
+
+.neu-s {
+    background: #eeeeee;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 40px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    inset 0px 0px 0px 0px #0001;
+    color: #4D3252;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    position: relative;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: left 95% top 50%, 0 0;
+    /* icon size, then gradient */
+    background-size: .65em auto, 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+/* active neumorphic push effect */
+.neu-s:active {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px #0001,
+    0px 0px 0px 0px #0001,
+    inset -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    inset -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    inset 7px 7px 20px 0px #0003,
+    inset 4px 4px 5px 0px #0001;
+}
+
+
+
+.neu-s option{
+    background-color: #eeeeee;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px #0001,
+    0px 0px 0px 0px #0001,
+    inset -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    inset -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    inset 7px 7px 20px 0px #0003,
+    inset 4px 4px 5px 0px #0001;
+}
+
+/*
+============================================================================
+============================================================================
+============================================================================
+=============================== Input Radio ================================
+============================================================================
+============================================================================
+============================================================================
+*/
+
+.neu-i-r{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #e7e7e7;
+    box-shadow: -2px -2px 5px 0px #fff9,
+    -1px -1px 2px 0px #fff9,
+    5px 5px 10px 0px #0002,
+    3px 3px 4px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+    color: #4D3252;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border:none;
+    outline: none;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+
+/* 1st part hover shine effect */
+.neu-i-r:hover:after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+/* 2nd part hover shine effect */
+.neu-i-r:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    opacity: 0;
+    transform: scale(0.01);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+/* 3rd part hover shine effect
+easing and timing params */
+.neu-i-r:hover:after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 1s, 0.15s;
+    transition-timing-function: ease;
+  }
+/*remove shine when active */
+.neu-i-r:checked:after {
+    opacity: 0;
+  }
+
+
+.neu-i-r-c-i input:checked {
+    background: rgba(211, 206, 238, 0.3);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.66666),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.66666),
+    inset -5px -5px 10px 0px rgba(255, 255, 255, 0.6),
+    inset -3px -3px 4px 0px rgba(255, 255, 255, 0.6),
+    inset 5px 5px 10px 0px rgba(0, 0, 0, 0.2),
+    inset 3px 3px 4px 0px rgba(0, 0, 0, 0.66666);
+  }
+
+  /*
+============================================================================
+============================================================================
+============================================================================
+============================= Input Checkbox ===============================
+============================================================================
+============================================================================
+============================================================================
+*/
+.neu-i-ch{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #e7e7e7;
+    box-shadow: -2px -2px 5px 0px #fff9,
+    -1px -1px 2px 0px #fff9,
+    5px 5px 10px 0px #0002,
+    3px 3px 4px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+    color: #4D3252;
+    border-radius: 15%;
+    width: 20px;
+    height: 20px;
+    border:none;
+    outline: none;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+
+/* 1st part hover shine effect */
+.neu-i-ch:hover:after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+/* 2nd part hover shine effect */
+.neu-i-che:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    opacity: 0;
+    transform: scale(0.01);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+/* 3rd part hover shine effect
+easing and timing params */
+.neu-i-che:hover:after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 1s, 0.15s;
+    transition-timing-function: ease;
+  }
+/*remove shine when active */
+.neu-i-che:checked:after {
+    opacity: 0;
+  }
+
+.neu-i-c-i input:checked {
+    background: rgba(211, 206, 238, 0.3);
+    box-shadow: 0px 0px 0px 0px #fff9,
+    0px 0px 0px 0px #fff9,
+    0px 0px 0px 0px #0001,
+    0px 0px 0px 0px #0001,
+    inset -2px -2px 5px 0px #fff9,
+    inset -1px -1px 2px 0px #fff9,
+    inset 5px 5px 10px 0px #0003,
+    inset 3px 3px 4px 0px #0001;
+  }
+
+/*
+============================================================================
+============================================================================
+============================================================================
+=============================== Input Color ================================
+============================================================================
+============================================================================
+============================================================================
+*/
+
+.neu-i-col{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    position: relative;
+
+}
+
+.neu-i-col::-webkit-color-swatch-wrapper {
+    padding: 0px;
+    border-radius: 10px;
+}
+
+/*
+============================================================================
+============================================================================
+============================================================================
+================================ Input File ================================
+============================================================================
+============================================================================
+============================================================================
+*/
+
+.neu-i-file {
+    color: transparent;
+}
+
+.neu-i-file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.neu-i-file:hover::before {
+    border: none;
+}
+  
+.neu-i-file:focus{
+    outline: none;
+    border: none;
+}
+
+/*all above is to remove existing style */
+
+.neu-i-file::before {
+    content: 'Select some files';
+    display: inline-block;
+    color:#4D3252;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    background: #bebebe;
+}
+

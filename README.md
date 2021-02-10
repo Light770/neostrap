@@ -10,21 +10,21 @@ Images are missing from the file, feel free to add your own to see a more accura
 
 ## Changes to be added in the next month:
 
--finished cards
--Modals
--Breadcrumbs
--Navs
--Navbars
--Pagination
--Popovers
--Tables
--Toasts
--Timelines
--Tooltips
--Accordions
--Carousels
--E-Commerce
--Icon boxes
+-finished cards<br>
+-Modals<br>
+-Breadcrumbs<br>
+-Navs<br>
+-Navbars<br>
+-Pagination<br>
+-Popovers<br>
+-Tables<br>
+-Toasts<br>
+-Timelines<br>
+-Tooltips<br>
+-Accordions<br>
+-Carousels<br>
+-E-Commerce<br>
+-Icon boxes<br>
 
 ## Changes to be added in the futur:
 

@@ -193,6 +193,18 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 }
 
+
+/*
+:'######:::'########:'##::: ##:'########:'########:::::'###::::'##:::::::
+'##... ##:: ##.....:: ###:: ##: ##.....:: ##.... ##:::'## ##::: ##:::::::
+ ##:::..::: ##::::::: ####: ##: ##::::::: ##:::: ##::'##:. ##:: ##:::::::
+ ##::'####: ######::: ## ## ##: ######::: ########::'##:::. ##: ##:::::::
+ ##::: ##:: ##...:::: ##. ####: ##...:::: ##.. ##::: #########: ##:::::::
+ ##::: ##:: ##::::::: ##:. ###: ##::::::: ##::. ##:: ##.... ##: ##:::::::
+. ######::: ########: ##::. ##: ########: ##:::. ##: ##:::: ##: ########:
+:......::::........::..::::..::........::..:::::..::..:::::..::........::
+*/
+
 *{
     text-decoration: none;
     font-family: sans-serif;
@@ -219,6 +231,7 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
     box-shadow: var(--inner-shadow-primary);
     margin-left: 10vw;
     margin-top: 25px;
+    display: block;
 }
 
 .neo-title-spe{
@@ -243,8 +256,554 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
     padding-bottom: 20px;
 }
 
+.go-up-button{
+    position: fixed;
+
+}
+
+.go-up-button-inner{
+    position: relative;
+    box-shadow: var(--box-shadow-primary);
+    padding-inline: 10px;
+    padding-block: 8px;
+    border-radius: 50%;
+    top: 75vh; left: 92vw;
+}
+
+/*
+'##::::'##:'########:'####::'######:::'##::::'##:'########:
+ ##:::: ##: ##.....::. ##::'##... ##:: ##:::: ##:... ##..::
+ ##:::: ##: ##:::::::: ##:: ##:::..::: ##:::: ##:::: ##::::
+ #########: ######:::: ##:: ##::'####: #########:::: ##::::
+ ##.... ##: ##...::::: ##:: ##::: ##:: ##.... ##:::: ##::::
+ ##:::: ##: ##:::::::: ##:: ##::: ##:: ##:::: ##:::: ##::::
+ ##:::: ##: ########:'####:. ######::: ##:::: ##:::: ##::::
+..:::::..::........::....:::......::::..:::::..:::::..:::::
+*/
+
+.h-5{
+    height:5%;
+}
+
+.h-10{
+    height:10%;
+}
+
+.h-15{
+    height:15%;
+}
+
+.h-20{
+    height:20%;
+}
+
+.h-25{
+    height:25%;
+}
+
+.h-30{
+    height:30%;
+}
+
+.h-35{
+    height:35%;
+}
+
+.h-40{
+    height:40%;
+}
+
+.h-45{
+    height:45%;
+}
+
+.h-50{
+    height:50%;
+}
+
+.h-55{
+    height:55%;
+}
+
+.h-60{
+    height:60%;
+}
+
+.h-65{
+    height:65%;
+}
+
+.h-70{
+    height:70%;
+}
+
+.h-75{
+    height:75%;
+}
+
+.h-80{
+    height:80%;
+}
+
+.h-85{
+    height:85%;
+}
+
+.h-90{
+    height:90%;
+}
+
+.h-95{
+    height:95%;
+}
+
+.h-100{
+    height:100%;
+}
+
+.h-105{
+    height:105%;
+}
+
+.h-110{
+    height:110%;
+}
+
+.h-115{
+    height:115%;
+}
+
+.h-120{
+    height:120%;
+}
+
+.h-125{
+    height:125%;
+}
+
+.h-130{
+    height:130%;
+}
+
+.h-135{
+    height:135%;
+}
+
+.h-140{
+    height:140%;
+}
+
+.h-145{
+    height:145%;
+}
+
+.h-150{
+    height:150%;
+}
+
+.h-155{
+    height:155%;
+}
+
+.h-160{
+    height:160%;
+}
+
+.h-165{
+    height:165%;
+}
+
+.h-170{
+    height:170%;
+}
+
+.h-175{
+    height:175%;
+}
+
+.h-180{
+    height:180%;
+}
+
+.h-185{
+    height:185%;
+}
+
+.h-190{
+    height:190%;
+}
+
+.h-195{
+    height:195%;
+}
+
+.h-200{
+    height:200%;
+}
+
+/*
+'##:::::'##:'####:'########::'########:'##::::'##:
+ ##:'##: ##:. ##:: ##.... ##:... ##..:: ##:::: ##:
+ ##: ##: ##:: ##:: ##:::: ##:::: ##:::: ##:::: ##:
+ ##: ##: ##:: ##:: ##:::: ##:::: ##:::: #########:
+ ##: ##: ##:: ##:: ##:::: ##:::: ##:::: ##.... ##:
+ ##: ##: ##:: ##:: ##:::: ##:::: ##:::: ##:::: ##:
+. ###. ###::'####: ########::::: ##:::: ##:::: ##:
+:...::...:::....::........::::::..:::::..:::::..::
+*/
+.w-5{
+    width:5%;
+}
+
+.w-10{
+    width:10%;
+}
+
+.w-15{
+    width:15%;
+}
+
+.w-20{
+    width:20%;
+}
+
+.w-25{
+    width:25%;
+}
+
+.w-30{
+    width:30%;
+}
+
+.w-35{
+    width:35%;
+}
+
+.w-40{
+    width:40%;
+}
+
+.w-45{
+    width:45%;
+}
+
+.w-50{
+    width:50%;
+}
+
+.w-55{
+    width:55%;
+}
+
+.w-60{
+    width:60%;
+}
+
+.w-65{
+    width:65%;
+}
+
+.w-70{
+    width:70%;
+}
+
 .w-75{
     width:75%;
+}
+
+.w-80{
+    width:80%;
+}
+
+.w-85{
+    width:85%;
+}
+
+.w-90{
+    width:90%;
+}
+
+.w-95{
+    width:95%;
+}
+
+.w-100{
+    width:100%;
+}
+
+/*
+:'######:::'#######::'##:::::::'##::::'##:'##::::'##:'##::: ##::'######::
+'##... ##:'##.... ##: ##::::::: ##:::: ##: ###::'###: ###:: ##:'##... ##:
+ ##:::..:: ##:::: ##: ##::::::: ##:::: ##: ####'####: ####: ##: ##:::..::
+ ##::::::: ##:::: ##: ##::::::: ##:::: ##: ## ### ##: ## ## ##:. ######::
+ ##::::::: ##:::: ##: ##::::::: ##:::: ##: ##. #: ##: ##. ####::..... ##:
+ ##::: ##: ##:::: ##: ##::::::: ##:::: ##: ##:.:: ##: ##:. ###:'##::: ##:
+. ######::. #######:: ########:. #######:: ##:::: ##: ##::. ##:. ######::
+:......::::.......:::........:::.......:::..:::::..::..::::..:::......:::
+*/
+
+.col-12{
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/*
+:'######::'##::::'##::::'###::::'##:::::::'##:::::::
+'##... ##: ###::'###:::'## ##::: ##::::::: ##:::::::
+ ##:::..:: ####'####::'##:. ##:: ##::::::: ##:::::::
+. ######:: ## ### ##:'##:::. ##: ##::::::: ##:::::::
+:..... ##: ##. #: ##: #########: ##::::::: ##:::::::
+'##::: ##: ##:.:: ##: ##.... ##: ##::::::: ##:::::::
+. ######:: ##:::: ##: ##:::: ##: ########: ########:
+:......:::..:::::..::..:::::..::........::........::
+*/
+
+@media (min-width: 768px){
+
+    .col-sm-1{
+        width: calc(62px * 1);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-2{
+        width: calc(62px * 2);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-3{
+        width: calc(62px * 3);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-4{
+        width: calc(62px * 4);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-5{
+        width: calc(62px * 5);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-6{
+        width: calc(62px * 6);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-7{
+        width: calc(62px * 7);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-8{
+        width: calc(62px * 8);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-9{
+        width: calc(62px * 9);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-10{
+        width: calc(62px * 10);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-11{
+        width: calc(62px * 11);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-sm-12{
+        width: calc(62px * 12);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+/*
+'##::::'##:'########:'########::'####:'##::::'##:'##::::'##:
+ ###::'###: ##.....:: ##.... ##:. ##:: ##:::: ##: ###::'###:
+ ####'####: ##::::::: ##:::: ##:: ##:: ##:::: ##: ####'####:
+ ## ### ##: ######::: ##:::: ##:: ##:: ##:::: ##: ## ### ##:
+ ##. #: ##: ##...:::: ##:::: ##:: ##:: ##:::: ##: ##. #: ##:
+ ##:.:: ##: ##::::::: ##:::: ##:: ##:: ##:::: ##: ##:.:: ##:
+ ##:::: ##: ########: ########::'####:. #######:: ##:::: ##:
+..:::::..::........::........:::....:::.......:::..:::::..::
+*/
+
+@media (min-width: 992px){
+
+    .col-md-1{
+        width: calc(81px * 1);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-2{
+        width: calc(81px * 2);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-3{
+        width: calc(81px * 3);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-4{
+        width: calc(81px * 4);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-5{
+        width: calc(81px * 5);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-6{
+        width: calc(81px * 6);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-7{
+        width: calc(81px * 7);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-8{
+        width: calc(81px * 8);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-9{
+        width: calc(81px * 9);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-10{
+        width: calc(81px * 10);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-11{
+        width: calc(81px * 11);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-md-12{
+        width: calc(81px * 12);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+/*
+'##::::::::::'###::::'########:::'######:::'########:
+ ##:::::::::'## ##::: ##.... ##:'##... ##:: ##.....::
+ ##::::::::'##:. ##:: ##:::: ##: ##:::..::: ##:::::::
+ ##:::::::'##:::. ##: ########:: ##::'####: ######:::
+ ##::::::: #########: ##.. ##::: ##::: ##:: ##...::::
+ ##::::::: ##.... ##: ##::. ##:: ##::: ##:: ##:::::::
+ ########: ##:::: ##: ##:::. ##:. ######::: ########:
+........::..:::::..::..:::::..:::......::::........::
+*/
+
+@media (min-width: 1200px){
+
+    .col-lg-1{
+        width: calc(97px * 1);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-2{
+        width: calc(97px * 2);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-3{
+        width: calc(97px * 3);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-4{
+        width: calc(97px * 4);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-5{
+        width: calc(97px * 5);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-6{
+        width: calc(97px * 6);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-7{
+        width: calc(97px * 7);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-8{
+        width: calc(97px * 8);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-9{
+        width: calc(97px * 9);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-10{
+        width: calc(97px * 10);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-11{
+        width: calc(97px * 11);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .col-lg-12{
+        width: calc(97px * 12);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
 }
 
 /*
@@ -269,19 +828,35 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 /*Bottom*/
 .mb-1{
-    margin-bottom: 2.5px;
+    margin-bottom: 0.2em;
 }
 
 .mb-2{
-    margin-bottom: 5px;
+    margin-bottom: 0.4em;
 }
 
 .mb-3{
-    margin-bottom: 7.5px;
+    margin-bottom: 0.6em;
 }
 
 .mb-4{
-    margin-bottom: 10px;
+    margin-bottom: 0.8em;
+}
+
+.mb-5{
+    margin-bottom: 1em;
+}
+
+.mb-6{
+    margin-bottom: 1.2em;
+}
+
+.mb-7{
+    margin-bottom: 1.4em;
+}
+
+.mb-8{
+    margin-bottom: 1.6em;
 }
 
 /*
@@ -296,19 +871,35 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 /*Top*/
 .mt-1{
-    margin-top: 2.5px;
+    margin-top: 0.2em;
 }
 
 .mt-2{
-    margin-top: 5px;
+    margin-top: 0.4em;
 }
 
 .mt-3{
-    margin-top: 7.5px;
+    margin-top: 0.6em;
 }
 
 .mt-4{
-    margin-top: 10px;
+    margin-top: 0.8em;
+}
+
+.mt-5{
+    margin-top: 1em;
+}
+
+.mt-6{
+    margin-top: 1.2em;
+}
+
+.mt-7{
+    margin-top: 1.4em;
+}
+
+.mt-8{
+    margin-top: 1.6em;
 }
 
 /*
@@ -323,20 +914,45 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 /*Right*/
 .mr-1{
-    margin-right: 2.5px;
+    margin-right: 0.2em;
 }
 
 .mr-2{
-    margin-right: 5px;
+    margin-right: 0.4em;
 }
 
 .mr-3{
-    margin-right: 7.5px;
+    margin-right: 0.6em;
 }
 
 .mr-4{
-    margin-right: 10px;
+    margin-right: 0.8em;
 }
+
+.mr-5{
+    margin-right: 1em;
+}
+
+.mr-6{
+    margin-right: 1.2em;
+}
+
+.mr-7{
+    margin-right: 1.4em;
+}
+
+.mr-8{
+    margin-right: 1.6em;
+}
+
+.mr-9{
+    margin-right: 1.8em;
+}
+
+.mr-10{
+    margin-right: 2em;
+}
+
 
 /*
  #        #######  #######  ####### 
@@ -350,19 +966,43 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 /*Left*/
 .ml-1{
-    margin-left: 2.5px;
+    margin-left: 0.2em;
 }
 
 .ml-2{
-    margin-left: 5px;
+    margin-left: 0.4em;
 }
 
 .ml-3{
-    margin-left: 7.5px;
+    margin-left: 0.6em;
 }
 
 .ml-4{
-    margin-left: 10px;
+    margin-left: 0.8em;
+}
+
+.ml-5{
+    margin-left: 1em;
+}
+
+.ml-6{
+    margin-left: 1.2em;
+}
+
+.ml-7{
+    margin-left: 1.4em;
+}
+
+.ml-8{
+    margin-left: 1.6em;
+}
+
+.ml-9{
+    margin-left: 1.8em;
+}
+
+.ml-10{
+    margin-left: 2em;
 }
 
 /*
@@ -375,6 +1015,109 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
  ##:::::::: ##:::: ##: ########:: ########::'####: ##::. ##:. ######:::
 ..:::::::::..:::::..::........:::........:::....::..::::..:::......::::
 */
+
+.p-1{
+    padding: 0.2em;
+}
+
+.p-2{
+    padding: 0.4rem;
+}
+
+.p-3{
+    padding: 0.6rem;
+}
+
+.p-4{
+    padding: 0.8rem;
+}
+
+.p-5{
+    padding: 1rem;
+}
+
+.p-6{
+    padding: 1.2em;
+}
+
+.p-7{
+    padding: 1.4rem;
+}
+
+.p-8{
+    padding: 1.6rem;
+}
+
+.p-9{
+    padding: 1.8rem;
+}
+
+.p-10{
+    padding: 2rem;
+}
+
+/*
+'##:::'##:
+. ##:'##::
+:. ####:::
+::. ##::::
+::: ##::::
+::: ##::::
+::: ##::::
+:::..:::::
+*/
+
+.py-1{
+    padding-block: 0.2em;
+}
+
+.py-2{
+    padding-block: 0.4em;
+}
+
+.py-3{
+    padding-block: 0.6em;
+}
+
+.py-4{
+    padding-block: 0.8em;
+}
+
+.py-5{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+/*
+'##::::'##:
+. ##::'##::
+:. ##'##:::
+::. ###::::
+:: ## ##:::
+: ##:. ##::
+ ##:::. ##:
+..:::::..::
+*/
+
+.px-1{
+    padding-inline: 0.2em;
+}
+
+.px-2{
+    padding-inline: 0.4em;
+}
+
+.px-3{
+    padding-inline: 0.6em;
+}
+
+.px4{
+    padding-inline: 0.8em;
+}
+
+.px-5{
+    padding-inline: 1em;
+}
 
 /*
  ######   #######  #######  #######  #######  #     # 
@@ -1676,4 +2419,136 @@ hr {
     border-top: solid 2px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/*
+'########:::::'###::::'########:::'######:::'########::'######::
+ ##.... ##:::'## ##::: ##.... ##:'##... ##:: ##.....::'##... ##:
+ ##:::: ##::'##:. ##:: ##:::: ##: ##:::..::: ##::::::: ##:::..::
+ ########::'##:::. ##: ##:::: ##: ##::'####: ######:::. ######::
+ ##.... ##: #########: ##:::: ##: ##::: ##:: ##...:::::..... ##:
+ ##:::: ##: ##.... ##: ##:::: ##: ##::: ##:: ##:::::::'##::: ##:
+ ########:: ##:::: ##: ########::. ######::: ########:. ######::
+........:::..:::::..::........::::......::::........:::......:::
+*/
+
+.badge{
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: var(--inner-shadow-primary);
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.badge:any-link {
+    box-shadow: var(--box-shadow-primary);
+}
+
+.badge:any-link:active {
+    box-shadow: var(--inner-shadow-primary);
+}
+
+.badge-md{
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.badge-lg{
+    padding: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.badge-pill {
+    margin-left: 10px;
+    background: white;
+}
+
+/*
+:'######:::::'###::::'########::'########:::'######::
+'##... ##:::'## ##::: ##.... ##: ##.... ##:'##... ##:
+ ##:::..:::'##:. ##:: ##:::: ##: ##:::: ##: ##:::..::
+ ##:::::::'##:::. ##: ########:: ##:::: ##:. ######::
+ ##::::::: #########: ##.. ##::: ##:::: ##::..... ##:
+ ##::: ##: ##.... ##: ##::. ##:: ##:::: ##:'##::: ##:
+. ######:: ##:::: ##: ##:::. ##: ########::. ######::
+:......:::..:::::..::..:::::..::........::::......:::
+*/
+
+.card {
+    border-radius: 10px;
+    margin-bottom: 2em;
+    margin-inline: 2em;
+}
+
+.card-body {
+    border-radius: 10px;
+    padding: 20px;
+} 
+
+.bg-white {
+    background: white;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+} 
+
+.avatar-sm {
+    height: 30px;
+
+}
+
+.rounded-circle{
+    border-radius: 150px;
+}
+
+.text-center > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+.card-title{
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.rounded-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

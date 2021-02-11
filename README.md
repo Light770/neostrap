@@ -11,7 +11,6 @@ Images are missing from the file, feel free to add your own to see a more accura
 ## Changes to be added in the next month:
 
 -finished cards<br>
--Modals<br>
 -Breadcrumbs<br>
 -Navs<br>
 -Navbars<br>

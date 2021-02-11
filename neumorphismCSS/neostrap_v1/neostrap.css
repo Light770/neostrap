@@ -227,18 +227,19 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 .spacer-container{
     padding: 50px;
-    width: 70vw;
+    width: calc(97px * 8);
     box-shadow: var(--inner-shadow-primary);
-    margin-left: 10vw;
+    margin-left: calc(97px * 2);
     margin-top: 25px;
     display: block;
+    border-radius: 10px;
 }
 
 .neo-title-spe{
     padding-block: 25px;
     text-transform: uppercase;
     font-size: 500%;
-    margin-left: 10vw;
+    margin-left: 20px;
 }
 
 .neo-p-spe{
@@ -816,6 +817,39 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
  ##:::: ##: ##:::: ##: ##:::. ##:. ######:::'####: ##::. ##:
 ..:::::..::..:::::..::..:::::..:::......::::....::..::::..::
 */
+
+.m-1{
+    margin: 0.2em;
+}
+
+.m-2{
+    margin: 0.4em;
+}
+
+.m-3{
+    margin: 0.6em;
+}
+
+.m-4{
+    margin: 0.8em;
+}
+
+.m-5{
+    margin: 1em;
+}
+
+.m-6{
+    margin: 1.2em;
+}
+
+.m-7{
+    margin: 1.4em;
+}
+
+.m-8{
+    margin: 1.6em;
+}
+
 /*
  ######   #######  #######  #######  #######  #     # 
  #     #  #     #     #        #     #     #  ##   ## 
@@ -1490,13 +1524,18 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 ........::::.......::::::..::::::::..::::::.......:::..::::..:::......:::
 */
 
+.btn {
+    cursor: pointer;
+}
+
 .btn-primary{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
     background: var(--primary-color);
     border: none;
     border-radius: 8px;
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1510,7 +1549,8 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
     background: var(--secondary-color);
     border: none;
     border-radius: 8px;
-    box-shadow: var(--box-shadow-secondary);
+    -webkit-box-shadow: var(--box-shadow-secondary);
+            box-shadow: var(--box-shadow-secondary);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1526,7 +1566,8 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 .btn-secondary:active {
     background: var(--secondary-color);
-    box-shadow: var(--inner-shadow-secondary);
+    -webkit-box-shadow: var(--inner-shadow-secondary);
+            box-shadow: var(--inner-shadow-secondary);
 }
 
 .btn-primary:focus{
@@ -1538,7 +1579,8 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 /* active neumorphic push effect */
 .btn-primary:active {
     background: var(--primary-color);
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
 }
 
 .btn-pill{
@@ -1570,7 +1612,8 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 .btn-primary:disabled, .btn-primary[disabled]{
     border: solid 1px rgba(55, 55, 55, 0.25);
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
     color:rgba(55, 55, 55, 0.25);
 }
 
@@ -1879,12 +1922,14 @@ easing and timing params */
 }
 
 .custom-select[multiple]::-webkit-scrollbar-track {
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
     z-index: 1;
 }
 
 .custom-select[multiple]::-webkit-scrollbar-button{
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     z-index: 2;
 }
 
@@ -1901,11 +1946,13 @@ easing and timing params */
     width: 16px;
     background-position: center 6px;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     z-index: 5;
 }
 .custom-select[multiple]::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
 }
 /* Down */
 .custom-select[multiple]::-webkit-scrollbar-button:single-button:vertical:increment {
@@ -1913,11 +1960,13 @@ easing and timing params */
     width: 16px;
     background-position: center 8px;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     z-index: 6;
 }
 .custom-select[multiple]::-webkit-scrollbar-button:single-button:vertical:increment:active {
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
 }
 
 /* Left */
@@ -1926,12 +1975,14 @@ easing and timing params */
     width: 12px;
     background-position: 3px 3px;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,50 50,100 50,0'/></svg>");
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     z-index: 7;
 }
 
 .custom-select[multiple]::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
 }
 
 /* Right */
@@ -1940,18 +1991,23 @@ easing and timing params */
     width: 12px;
     background-position: 3px 3px;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 0,100 50,50'/></svg>");
-    box-shadow: var(--box-shadow-primary);
+    -webkit-box-shadow: var(--box-shadow-primary);
+            box-shadow: var(--box-shadow-primary);
     z-index: 8;
 }
 .custom-select[multiple]::-webkit-scrollbar-button:single-button:horizontal:increment:active {
-    box-shadow: var(--inner-shadow-primary);
+    -webkit-box-shadow: var(--inner-shadow-primary);
+            box-shadow: var(--inner-shadow-primary);
 }
 
    
 .custom-select[multiple]::-webkit-scrollbar-thumb {
     background-color: rgb(215, 215, 215);
     border: solid 1px rgba(55, 55, 55, 0.25);
-    box-shadow: 
+    -webkit-box-shadow: 
+    -1px -1px 3px 0px #0003,
+    1px 1px 3px 0px #0002;
+            box-shadow: 
     -1px -1px 3px 0px #0003,
     1px 1px 3px 0px #0002;
 
@@ -2421,6 +2477,14 @@ hr {
     margin-bottom: 20px;
 }
 
+.hr-light {
+    border-top: solid 1px;
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 /*
 '########:::::'###::::'########:::'######:::'########::'######::
  ##.... ##:::'## ##::: ##.... ##:'##... ##:: ##.....::'##... ##:
@@ -2523,6 +2587,10 @@ hr {
     justify-content: space-between;
 }
 
+.justify-content-center{
+    justify-content: center;
+}
+
 .card-img-top{
     width: 100%;
 }
@@ -2551,4 +2619,183 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+/*
+'##::::'##::'#######::'########:::::'###::::'##:::::::
+ ###::'###:'##.... ##: ##.... ##:::'## ##::: ##:::::::
+ ####'####: ##:::: ##: ##:::: ##::'##:. ##:: ##:::::::
+ ## ### ##: ##:::: ##: ##:::: ##:'##:::. ##: ##:::::::
+ ##. #: ##: ##:::: ##: ##:::: ##: #########: ##:::::::
+ ##:.:: ##: ##:::: ##: ##:::: ##: ##.... ##: ##:::::::
+ ##:::: ##:. #######:: ########:: ##:::: ##: ########:
+..:::::..:::.......:::........:::..:::::..::........::
+*/
+
+.modal .btn-close { /*cross closing button*/
+	color: #aaa;
+	cursor: pointer;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 0;
+	right: 5px;
+    text-decoration: none;
+    margin-top: 23px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.modal .btn-close:hover,.modal .btn-close:focus {
+	box-shadow: var(--box-shadow-primary);
+}
+
+.modal .btn-close:active {
+	box-shadow: var(--inner-shadow-primary);
+}
+
+.modal-wrap:before { /*overlay + modal */
+	content: '';
+	display: none;
+	background: rgba(var(--primary-r-value),var(--primary-g-value),var(--primary-b-value),0.9);
+    position: fixed;
+    opacity: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 101
+}
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 102
+}
+
+.modal-open:checked ~ .modal-wrap:before,.modal-open:checked ~ .modal-wrap .modal-overlay {
+	display: block
+}
+
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    transform: translate(-50%,-50%);
+    opacity: 1;
+	position: fixed;
+	top: 40%
+}
+
+.modal-dialog {
+	background: var(--primary-color);
+    border-radius: 10px;
+	position: fixed;
+	left: 50%;
+	top: -100%;
+    transform: translate(-50%,-150%);
+    opacity: 0;
+	transition: transform, opacity 0.5s ease-in-out;
+	width: 80%;
+	max-width: 600px;
+	z-index: 103
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+.modal-body,.modal-footer, .modal-header {
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.modal-header{
+    padding-top: 25px;
+}
+
+.modal-footer{
+    padding-bottom: 25px;
+}
+
+.modal-header h2 {
+	font-size: 130%;
+	margin: 0
+}
+
+.modal-body h2 {
+	font-size: 160%;
+	margin-bottom: 20px;
+}
+
+.modal-footer {
+	text-align: right
+}
+
+.modal-footer .centered {
+	text-align: center
+}
+
+.display-1-lg{
+    transform: scale(5);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*
+'########::'########:::'#######::'########::'########:::'#######::'##:::::'##:'##::: ##:
+ ##.... ##: ##.... ##:'##.... ##: ##.... ##: ##.... ##:'##.... ##: ##:'##: ##: ###:: ##:
+ ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##: ##: ##: ####: ##:
+ ##:::: ##: ########:: ##:::: ##: ########:: ##:::: ##: ##:::: ##: ##: ##: ##: ## ## ##:
+ ##:::: ##: ##.. ##::: ##:::: ##: ##.....::: ##:::: ##: ##:::: ##: ##: ##: ##: ##. ####:
+ ##:::: ##: ##::. ##:: ##:::: ##: ##:::::::: ##:::: ##: ##:::: ##: ##: ##: ##: ##:. ###:
+ ########:: ##:::. ##:. #######:: ##:::::::: ########::. #######::. ###. ###:: ##::. ##:
+........:::..:::::..:::.......:::..:::::::::........::::.......::::...::...:::..::::..::
+*/
+
+.btn-dropdown {
+	z-index: 2;
+}
+
+.btn-dropdown:after {
+    content: ' ▼';
+}
+
+.dropdown {
+	display: inline-block
+}
+
+.dropdown-overlay {
+	display: none;
+	position: fixed;
+	top: 20px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1
+}
+
+.dropdown-inner {
+	background: var(--primary-color);
+    box-shadow: var(--box-shadow-primary);
+	border-radius: 10px;
+    position: absolute;
+    margin-top: 20px;
+	padding: 20px;
+	opacity: 0;
+	transition: opacity .3s,visibility .3s;
+	visibility: hidden;
+	z-index: 2
+}
+
+.dropdown-hover:hover .dropdown-inner,.dropdown-open:checked ~ .dropdown-inner {
+	opacity: 100;
+	visibility: visible
+}
+
+.dropdown-hover:hover .dropdown-overlay,.dropdown-open:checked ~ .dropdown-overlay {
+	display: block
 }

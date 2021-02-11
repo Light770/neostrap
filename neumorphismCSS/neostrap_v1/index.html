@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asstets/img/ico/Neostrap-logo-fav.png" />
 <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 -->
@@ -12,13 +13,23 @@
 </head>
 <body class="body-primary">
     <div id="top"></div>
-    <h1 class="neo-title-spe text-dark">NEOSTRAP</h1>
+    <div class="row  justify-content-center">
+            <img class="logo w-10" src="asstets/img/logo/Neostrap-logo.png" alt="neostrap logo"/>
+            <h1 class="neo-title-spe text-dark">NEOSTRAP</h1>
+    </div>
     <p class="text-dark neo-p-spe">Welcome to the neostrap cheat-sheet where all the classes are described and used.</p>
-    <a href="#buttons" class="btn-primary">Buttons</a>
-    <a href="#forms" class="btn-primary">Forms</a>
-    <a href="#alerts" class="btn-primary">Alerts</a>
-    <a href="#badges" class="btn-primary">Badges</a>
-    <a href="#cards" class="btn-primary">Cards</a>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <a href="#buttons" class="btn-primary">Buttons</a>
+        <a href="#forms" class="btn-primary">Forms</a>
+        <a href="#alerts" class="btn-primary">Alerts</a>
+        <a href="#badges" class="btn-primary">Badges</a>
+        <a href="#cards" class="btn-primary">Cards</a>
+        <a href="#modals" class="btn-primary">Modals</a>
+        <a href="#dropdowns" class="btn-primary">Dropdowns</a>
+        <div class="col-md-2"></div>
+    </div>
+
     <div class="go-up-button">
         <a href="#top" class="go-up-button-inner"><i class="fa fa-arrow-up"></i></a>
     </div>
@@ -35,7 +46,7 @@
  ########::. #######::::: ##::::::: ##::::. #######:: ##::. ##:. ######::
 ........::::.......::::::..::::::::..::::::.......:::..::::..:::......:::
 -->
-<div id="buttons">
+<div id="buttons" class="row">
 
 </div>
     <div class="spacer-container">
@@ -1444,7 +1455,7 @@
 
     </div>
 
-    
+
 <!--
 '##::::'##::'#######::'########:::::'###::::'##::::::::'######::
  ###::'###:'##.... ##: ##.... ##:::'## ##::: ##:::::::'##... ##:
@@ -1455,38 +1466,232 @@
  ##:::: ##:. #######:: ########:: ##:::: ##: ########:. ######::
 ..:::::..:::.......:::........:::..:::::..::........:::......:::
 -->
+    <div id="modals"></div>
 
     <div class="spacer-container">
         <h3 class="text-dark neo-p-m-spe">Default Modal</h3>
-        <!-- Button Modal -->
-        <button type="button" class="btn btn-block btn-primary mb-4" data-toggle="modal" data-target="#modal-default">Default</button>
-        <!-- Modal Content -->
-        <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+        <label class="btn btn-block btn-primary mb-4" for="modal-default">Click for Modal</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-default" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-default"></label>
+                <div class="modal-dialog shadow-soft">
                     <div class="modal-header">
-                        <h2 class="h6 modal-title mb-0" id="modal-title-default">Terms of Service</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
+                        <h2>Terms of service</h2>
+                        <label class="btn-close" for="modal-default" aria-hidden="true">×</label>
                     </div>
+                    <hr class="hr-light">
                     <div class="modal-body">
                         <p>With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.</p>
                         <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as
-                            soon as possible of high-risk data breaches that could personally affect them.</p>
+                        soon as possible of high-risk data breaches that could personally affect them.</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-sm btn-primary">I Got It</button>
-                        <button type="button" class="btn btn-primary text-danger ml-auto" data-dismiss="modal">Close</button>
+                    <div class="modal-footer row justify-content-between">
+                        <label class="btn btn-primary" for="modal-default">Got it</label>
+                        <label class="btn btn-primary text-danger" for="modal-default">Close</label>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End of Modal Content -->
+          </div>
     </div>
 
     <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Careers</h3>
+        <h3 class="text-dark neo-p-m-spe">Modal Inset</h3>
+        <label class="btn btn-block btn-primary mb-4" for="modal-inset">Click for Modal</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-inset" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-inset"></label>
+                <div class="modal-dialog shadow-inset">
+                    <div class="modal-header">
+                        <h2>Terms of service</h2>
+                        <label class="btn-close" for="modal-inset" aria-hidden="true">×</label>
+                    </div>
+                    <hr class="hr-light">
+                    <div class="modal-body">
+                        <p>With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.</p>
+                        <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as
+                        soon as possible of high-risk data breaches that could personally affect them.</p>
+                    </div>
+                    <div class="modal-footer row justify-content-between">
+                        <label class="btn btn-primary" for="modal-inset">Got it</label>
+                        <label class="btn btn-primary text-danger" for="modal-inset">Close</label>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Border Modal</h3>
+        <label class="btn btn-block btn-primary mb-4" for="modal-bordered">Click for Modal</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-bordered" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-bordered"></label>
+                <div class="modal-dialog shadow-inset">
+                    <div class="shadow-soft m-6">
+                        <div class="modal-header">
+                            <h2>Terms of service</h2>
+                            <label class="btn-close" for="modal-bordered" aria-hidden="true">×</label>
+                        </div>
+                        <hr class="hr-light">
+                        <div class="modal-body">
+                            <p>With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.</p>
+                            <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as
+                            soon as possible of high-risk data breaches that could personally affect them.</p>
+                        </div>
+                        <div class="modal-footer row justify-content-between">
+                            <label class="btn btn-primary" for="modal-bordered">Got it</label>
+                            <label class="btn btn-primary text-danger" for="modal-bordered">Close</label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Notification</h3>
+        <label class="btn btn-block btn-primary mb-4" for="modal-notification">Notification</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-notification" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-notification"></label>
+                <div class="modal-dialog shadow-inset">
+                    <div class="shadow-soft m-6">
+                        <div class="modal-header">
+                            <h2>A new experience, personalized for you.</h2>
+                            <label class="btn-close" for="modal-notification" aria-hidden="true">×</label>
+                        </div>
+                        <hr class="hr-light">
+                        <div class="modal-body">
+                            <div class="py-3 text-center">
+                                <span class="modal-icon display-1-lg"><span class="far fa-envelope-open"></span></span>
+                                <h2 class="h4 my-3">Important message!</h2>
+                            </div>
+                            <p>Do you know that you can assign status and relation to a company right in the visit list?.</p>
+                        </div>
+                        <div class="modal-footer row justify-content-between">
+                            <label class="btn btn-primary" >Go to Inbox</label>
+                            <label class="btn btn-primary text-danger" for="modal-notification">Close</label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Achievement Modal</h3>
+        <label class="btn btn-block btn-primary mb-4" for="modal-achievement">New Achievement</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-achievement" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-achievement"></label>
+                <div class="modal-dialog shadow-inset">
+                    <div class="shadow-soft m-6">
+                        <div class="modal-header">
+                            <h2>You just unlocked a new badge</h2>
+                            <label class="btn-close" for="modal-achievement" aria-hidden="true">×</label>
+                        </div>
+                        <hr class="hr-light">
+                        <div class="modal-body">
+                            <div class="py-3 text-center">
+                                <span class="modal-icon display-1-lg"><span class="fas fa-medal"></span></span>
+                                <h2 class="my-3">Author Level 5</h2>
+                            </div>
+                            <p>One Thousand Dollars! Well done - heads are turning your way.</p>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer row justify-content-between">
+                            <label class="btn btn-primary" >All Badges</label>
+                            <label class="btn btn-primary text-danger" for="modal-achievement">Close</label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Subscription Modal</h3>
+        <label class="btn btn-block btn-primary mb-4" for="modal-newsletter">Newsletter</label>
+        <div class="modal">
+            <input class="modal-open" id="modal-newsletter" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-newsletter"></label>
+                <div class="modal-dialog shadow-soft">
+                    <div class="modal-header mb-8">
+                        <label class="btn-close" for="modal-newsletter" aria-hidden="true">×</label>
+                    </div>
+                    <hr class="hr-light">
+                    <div class="modal-body">
+                        <div class="py-3 text-center">
+                            <span class="modal-icon display-1-lg"><span class="fas fa-envelope-open-text"></span></span>
+                            <h2 class="my-3">Join our 1,360,462 subscribers</h2>
+                        </div>
+                        <p>Get exclusive access to freebies, premium products and news.</p>
+                        <div class="form-group">
+                            <label for="exampleInputEmail6">Email address</label>
+                            <div class="d-sm-flex flex-column flex-sm-row mb-3 justify-content-center">
+                                <input type="text" id="exampleInputEmail6" placeholder="Enter your email adress here" class="mr-sm-1 mb-2 mb-sm-0 form-control form-control-lg">
+                                <button type="submit" class="ml-sm-1 btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer row justify-content-center">
+                        <p>We’ll never share your details with third parties.
+                        <br>View our <a href="#">Privacy Policy</a> for more info.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--
+'########::'########:::'#######::'########::'########:::'#######::'##:::::'##:'##::: ##:
+ ##.... ##: ##.... ##:'##.... ##: ##.... ##: ##.... ##:'##.... ##: ##:'##: ##: ###:: ##:
+ ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##: ##: ##: ####: ##:
+ ##:::: ##: ########:: ##:::: ##: ########:: ##:::: ##: ##:::: ##: ##: ##: ##: ## ## ##:
+ ##:::: ##: ##.. ##::: ##:::: ##: ##.....::: ##:::: ##: ##:::: ##: ##: ##: ##: ##. ####:
+ ##:::: ##: ##::. ##:: ##:::: ##: ##:::::::: ##:::: ##: ##:::: ##: ##: ##: ##: ##:. ###:
+ ########:: ##:::. ##:. #######:: ##:::::::: ########::. #######::. ###. ###:: ##::. ##:
+........:::..:::::..:::.......:::..:::::::::........::::.......::::...::...:::..::::..::
+-->
+
+    <div id="dropdowns"></div>
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Dropdown</h3>
+          <div class="dropdown">
+            <label class="btn btn-primary btn-dropdown" for="dropdown-1">One Dropdown</label>
+            <input class="dropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden>
+            <label class="dropdown-overlay" for="dropdown-1"></label>
+            <div class="dropdown-inner">
+              <ul class="nav-list">
+                <li><a class="btn" href="#component-dropdown">This is nice!</a><hr class="hr-light"></li>
+                <li><a class="btn" href="#component-dropdown">Good example</a></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+
+    <div class="spacer-container">
+        <h3 class="text-dark neo-p-m-spe">Dropdown with hover</h3>
+        <div class="dropdown dropdown-hover">
+            <span class="btn btn-primary btn-dropdown">One Dropdown</span>
+            <div class="dropdown-inner">
+              <ul class="nav-list">
+                <li><a class="btn mb-6" href="#modals">Modals</a><hr class="hr-light"></li>
+                <li><a class="btn mb-6" href="#buttons">Buttons</a><hr class="hr-light"></li>
+                <li><a class="btn mb-6" href="#cards">Cards</a></li>
+              </ul>
+            </div>
+          </div>
 
     </div>
 

@@ -16,10 +16,8 @@ Images are missing from the file, feel free to add your own to see a more accura
 -Navbars<br>
 -Pagination<br>
 -Popovers<br>
--Tables<br>
 -Toasts<br>
 -Timelines<br>
--Tooltips<br>
 -E-Commerce<br>
 -Icon boxes<br>
 

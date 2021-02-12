@@ -16,10 +16,17 @@
 ::::::::::::::: ##:::. ##: ########: ##:::: ##: ########::::: ##:::: ##: ########:::::::::::::
 :::::::::::::::..:::::..::........::..:::::..::........::::::..:::::..::........::::::::::::::
 
+This project was liscenced under the MIT License, it allows anyone to use for private and commercial reason this library, you are free to modify and distribute it or any version of it. 
+
+Detailed documentation on http://neostrap.net
+
 the text headers were made with : https://www.messletters.com/en/big-text/ with the banner3-D style
 
 awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-webkit/
 
+please give back to the community more than what the community has given you.
+
+Elie aka "Light" Annestay
 */
 :root{
 /*
@@ -207,7 +214,7 @@ awesome ressource for scrollbars : https://css-tricks.com/custom-scrollbars-in-w
 
 *{
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: Roboto, 'Open Sans', 'Noto Sans JP', Lato, Montserrat, Poppins, Rubik, Mukta, sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -3346,4 +3353,134 @@ progress {
 
 .table-hover tr:nth-child(n):hover {
     background: rgba(55, 55, 55, 0.07);
+}
+
+/*
+
+'########:::'#######::'########:::'#######::'##::::'##:'########:'########:::'######::
+ ##.... ##:'##.... ##: ##.... ##:'##.... ##: ##:::: ##: ##.....:: ##.... ##:'##... ##:
+ ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##::::::: ##:::: ##: ##:::..::
+ ########:: ##:::: ##: ########:: ##:::: ##: ##:::: ##: ######::: ########::. ######::
+ ##.....::: ##:::: ##: ##.....::: ##:::: ##:. ##:: ##:: ##...:::: ##.. ##::::..... ##:
+ ##:::::::: ##:::: ##: ##:::::::: ##:::: ##::. ## ##::: ##::::::: ##::. ##::'##::: ##:
+ ##::::::::. #######:: ##::::::::. #######::::. ###:::: ########: ##:::. ##:. ######::
+..::::::::::.......:::..::::::::::.......::::::...:::::........::..:::::..:::......:::
+
+*/
+
+.btn-popover {
+	z-index: 2;
+}
+
+.btn-popover i {
+    visibility: hidden;
+}
+
+.popover-open:checked ~ .btn-popover i {
+    visibility: visible;
+    color:hsla(0, 0%, 0%, 0.15);
+    transform: rotate(180deg);
+}
+
+.popover {
+	display: inline-block
+}
+
+.popover-overlay {
+	display: none;
+	position: fixed;
+	top: 0px;
+	right: 0;
+	bottom: 0px;
+	left: 0;
+	z-index: 1
+}
+
+.popover-inner {
+	background: var(--primary-color);
+    box-shadow: var(--box-shadow-primary);
+	border-radius: 10px;
+    position: absolute;
+    margin-top: 20px;
+	padding: 20px;
+	opacity: 0;
+	transition: opacity .3s,visibility .3s;
+	visibility: hidden;
+	z-index: 2
+}
+
+.popover-inner h2 {
+    font-size: 120%;
+}
+
+.popover-hover:hover .popover-inner,.popover-open:checked ~ .popover-inner {
+	opacity: 100;
+	visibility: visible
+}
+
+.popover-hover:hover .popover-overlay,.popover-open:checked ~ .popover-overlay {
+	display: block
+}
+
+/*
+'####::'######:::'#######::'##::: ##:
+. ##::'##... ##:'##.... ##: ###:: ##:
+: ##:: ##:::..:: ##:::: ##: ####: ##:
+: ##:: ##::::::: ##:::: ##: ## ## ##:
+: ##:: ##::::::: ##:::: ##: ##. ####:
+: ##:: ##::: ##: ##:::: ##: ##:. ###:
+'####:. ######::. #######:: ##::. ##:
+....:::......::::.......:::..::::..::
+'########:::'#######::'##::::'##:'########::'######::
+ ##.... ##:'##.... ##:. ##::'##:: ##.....::'##... ##:
+ ##:::: ##: ##:::: ##::. ##'##::: ##::::::: ##:::..::
+ ########:: ##:::: ##:::. ###:::: ######:::. ######::
+ ##.... ##: ##:::: ##::: ## ##::: ##...:::::..... ##:
+ ##:::: ##: ##:::: ##:: ##:. ##:: ##:::::::'##::: ##:
+ ########::. #######:: ##:::. ##: ########:. ######::
+........::::.......:::..:::::..::........:::......:::
+*/
+
+.icon{
+
+}
+
+.icon-shape{
+    width: auto;
+    padding: 15px;
+    margin: 25px;
+}
+
+.icon-shape-lg{
+    padding: 15px;
+    margin: 25px;
+}
+
+.icon-shape-sm i, .icon-shape i{
+    margin: 25px;
+    transform: scale(4);
+    padding: 25px;
+}
+
+/*
+'########::'########::'########::::'###::::'########::
+ ##.... ##: ##.... ##: ##.....::::'## ##::: ##.... ##:
+ ##:::: ##: ##:::: ##: ##::::::::'##:. ##:: ##:::: ##:
+ ########:: ########:: ######:::'##:::. ##: ##:::: ##:
+ ##.... ##: ##.. ##::: ##...:::: #########: ##:::: ##:
+ ##:::: ##: ##::. ##:: ##::::::: ##.... ##: ##:::: ##:
+ ########:: ##:::. ##: ########: ##:::: ##: ########::
+........:::..:::::..::........::..:::::..::........:::
+:'######::'########::'##::::'##:'##::::'##:'########::
+'##... ##: ##.... ##: ##:::: ##: ###::'###: ##.... ##:
+ ##:::..:: ##:::: ##: ##:::: ##: ####'####: ##:::: ##:
+ ##::::::: ########:: ##:::: ##: ## ### ##: ########::
+ ##::::::: ##.. ##::: ##:::: ##: ##. #: ##: ##.... ##:
+ ##::: ##: ##::. ##:: ##:::: ##: ##:.:: ##: ##:::: ##:
+. ######:: ##:::. ##:. #######:: ##:::: ##: ########::
+:......:::..:::::..:::.......:::..:::::..::........:::
+*/
+
+.breadcrumb {
+    display: inline;
 }

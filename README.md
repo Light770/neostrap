@@ -19,7 +19,6 @@ Images are missing from the file, feel free to add your own to see a more accura
 -Toasts<br>
 -Timelines<br>
 -E-Commerce<br>
--Icon boxes<br>
 
 ## Changes to be added in the futur:
 

@@ -9,24 +9,52 @@
 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="neostrap.css"/>
+    <link rel="stylesheet" href="neogrid.css"/>
     <title>Neostrap</title>
 </head>
 <body class="body-primary">
-    <div id="top"></div>
-    <div class="row  justify-content-center">
-            <img class="logo w-10" src="asstets/img/logo/Neostrap-logo.png" alt="neostrap logo"/>
+    <ul class="ws-100 row navbar shadow-soft sticky">
+        <li class="nav-items">
+            <a href="#buttons" class="btn">Buttons</a>
+        </li>
+        <li class="nav-items">
+            <a href="#forms" class="btn">Forms</a>
+        </li>
+        <li class="nav-items">
+            <a href="#alerts" class="btn">Alerts</a>
+        </li>
+        <li class="nav-items">
+            <a href="#badges" class="btn">Badges</a>
+        </li>
+        <li class="nav-items">
+            <a href="#cards" class="btn">Cards</a>
+        </li>
+        <li class="nav-items">
+            <a href="#modals" class="btn">Modals</a>
+        </li>
+        <li class="nav-items">
+            <a href="#dropdowns" class="btn">Dropdowns</a>
+        </li>
+        <li>
+            
+        </li>
+    </ul>
+
+    <div id="top" class="headroom row"></div>
+    <div class="row  justify-content-center align-items-center">
+            <img class="logo w-10 h-10" src="asstets/img/logo/Neostrap-logo.png" alt="neostrap logo"/>
             <h1 class="neo-title-spe text-dark">NEOSTRAP</h1>
     </div>
-    <p class="text-dark neo-p-spe">Welcome to the neostrap cheat-sheet where all the classes are described and used.</p>
+    <div class="row">
+        <div class="w-10"></div>
+        <div class="w-80">
+            <p class="text-dark neo-p-spe">Welcome to the neostrap cheat-sheet where all the classes are described and used. To start using Neostrap, check the <a class="text-info"href="https://github.com/Light770/neostrap/tree/master/neumorphismCSS/neostrap_v1" target="_blank">github</a> where all the code is free to use under the MIT license</p>
+        </div>
+        <div class="w-10"></div>
+    </div>
     <div class="row">
         <div class="col-md-2"></div>
-        <a href="#buttons" class="btn-primary">Buttons</a>
-        <a href="#forms" class="btn-primary">Forms</a>
-        <a href="#alerts" class="btn-primary">Alerts</a>
-        <a href="#badges" class="btn-primary">Badges</a>
-        <a href="#cards" class="btn-primary">Cards</a>
-        <a href="#modals" class="btn-primary">Modals</a>
-        <a href="#dropdowns" class="btn-primary">Dropdowns</a>
+
         <div class="col-md-2"></div>
     </div>
 
@@ -47,9 +75,8 @@
 ........::::.......::::::..::::::::..::::::.......:::..::::..:::......:::
 -->
 <div id="buttons" class="row">
-
-</div>
-    <div class="spacer-container">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Button Primary</h3>
         <button class="btn-primary hover-shine text-secondary mr-2 mb-2" type="button">Secondary</button>
         <button class="btn-primary hover-shine text-info mr-2 mb-2" type="button">Info</button>
@@ -58,6 +85,9 @@
         <button class="btn-primary hover-shine text-dark mr-2 mb-2" type="button">Dark</button>
         <button class="btn-primary hover-shine text-gray mb-2" type="button">Gray</button>
     </div>
+    <div class="w-20"></div>
+</div>
+
 <!--- work in progress
 
     <div class="spacer-container bg-secondary">
@@ -80,7 +110,9 @@
         <button class="btn-secondary hover-shine text-light mb-2" type="button">Gray</button>
     </div>
 -->
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Button Pill</h3>
         <button class="btn-primary btn-pill hover-shine text-dark mr-2 mb-2" type="button">Secondary</button>
         <button class="btn-primary btn-pill hover-shine text-secondary mr-2 mb-2" type="button">Secondary</button>
@@ -90,8 +122,11 @@
         <button class="btn-primary btn-pill hover-shine text-dark mr-2 mb-2" type="button">Dark</button>
         <button class="btn-primary btn-pill hover-shine text-gray mb-2" type="button">Gray</button>
     </div>
-
-    <div class="spacer-container">
+    <div class="w-20"></div>
+</div>
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Buttons with icon</h3>
         <button class="btn-primary hover-shine mr-3" type="button">
             <span class="mr-1"><span class="fas fa-book-open"></span></span>
@@ -102,8 +137,12 @@
             <span class="ml-1"><span class="fas fa-book-open"></span></span>
         </button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Icon only Buttons</h3>
         <button class="btn-icon-only btn-primary hover-shine mr-3" type="button" aria-label="love button" title="love button">
             <span aria-hidden="true" class="far fa-thumbs-up"></span>
@@ -112,26 +151,24 @@
             <span aria-hidden="true" class="far fa-heart text-danger"></span>
         </button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Animated Push Buttons</h3>
         <button class="btn-primary animate-up-primary-2 mr-2" type="button">Animate up</button>
         <button class="btn-primary animate-right-primary-2 mr-2" type="button">Animate right</button>
         <button class="btn-primary animate-down-primary-2 mr-2" type="button">Animate down</button>
         <button class="btn-primary animate-left-primary-2 mr-2" type="button">Animate left</button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Dropdown Buttons</h3>
-
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Dropdown Direction</h3>
-
-    </div>
-
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Social Media Buttons</h3>
         <button class="btn-primary color-facebook hover-shine mr-2" type="button">
             <span class="mr-1"><span class="fab fa-facebook-f color-facebook"></span></span>
@@ -152,8 +189,12 @@
             Login with GitHub
         </button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Icons only</h3>
         <button class="btn-icon-only btn-primary hover-shine mr-3" type="button" aria-label="facebook button" title="facebook button">
             <span aria-hidden="true" class="fab fa-facebook color-facebook"></span>
@@ -168,23 +209,39 @@
             <span aria-hidden="true" class="fab fa-github-alt color-github"></span>
         </button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Button sizing</h3>
         <button class="btn-sm btn-primary hover-shine mr-3" type="button">Small</button>
         <button class="btn-primary hover-shine mr-3" type="button">Regular</button>
         <button class="btn-lg btn-primary hover-shine" type="button">Large Button</button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Button block</h3>
         <button class="btn-primary hover-shine btn-block" type="button">Block button</button>
     </div>
+    <div class="w-20"></div>
+</div>
 
-    <div class="spacer-container">
+<div class="row">
+    <div class="w-20"></div>
+    <div class="spacer-container w-60">
         <h3 class="text-dark neo-p-m-spe">Disabled Button</h3>
         <button class="btn-primary mr-3" type="button" disabled>Regular</button>
     </div>
+    <div class="w-20"></div>
+</div>
+
 <!--
 '########::'#######::'########::'##::::'##::'######::
  ##.....::'##.... ##: ##.... ##: ###::'###:'##... ##:
@@ -195,280 +252,424 @@
  ##:::::::. #######:: ##:::. ##: ##:::: ##:. ######::
 ..:::::::::.......:::..:::::..::..:::::..:::......:::
 -->
-<div id="forms"></div>
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Login Example</h3>
-        <form action="#" class="w-75">
+<div id="forms">
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Login Example</h3>
+            <form action="#" class="w-75">
+                <div class="form-group mb-4">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-check group-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="remember">
+                    <label class="form-check-label text-muted" for="remember">
+                        Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn-primary hover-shine">Submit</button>
+            </form>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Input with icon</h3>
+            <div class="form-group">
+                <label for="exampleInputIcon1">Icon Left</label>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><span class="fas fa-search"></span></span>
+                    </div>
+                    <input class="form-control" id="exampleInputIcon1" placeholder="Icon Left" type="text" aria-label="Input with icon left">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputIcon2">Icon Right</label>
+                <div class="input-group mb-4">
+                    <input class="form-control" id="exampleInputIcon2" placeholder="Icon Right" aria-label="Input group" type="text">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><span class="fas fa-search"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Validation</h3>
             <div class="form-group mb-4">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                <small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                <div class="valid-feedback text-muted">
+                    Looks good!
+                </div>
             </div>
             <div class="form-group mb-4">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <label for="validationServerUsername">Username</label>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
+                <div class="invalid-feedback text-muted">
+                    Please choose a username.
+                </div>
             </div>
-            <div class="form-check group-check mb-4">
-                <input class="form-check-input" type="checkbox" value="" id="remember">
-                <label class="form-check-label text-muted" for="remember">
-                    Remember me
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Select Input</h3>
+            <div class="form-group">
+                <label class="mb-4 mr-2" for="inlineFormCustomSelectPref">Country</label>
+                <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+                    <option selected>Choose...</option>
+                    <option value="1">United States</option>
+                    <option value="2">Germany</option>
+                    <option value="3">Canada</option>
+                </select>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Multiple Select</h3>
+            <div class="form-group">
+                <label class="mb-4" for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="custom-select" id="exampleFormControlSelect2">
+                <option>Bootstrap</option>
+                <option>VueJs</option>
+                <option>Angular</option>
+                <option>React</option>
+                <option>NodeJs</option>
+                </select>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Textarea</h3>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea2">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">File upload</h3>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Checkboxes squared</h3>
+            <div class="form-check square-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck111" checked>
+                <label class="form-check-label" for="defaultCheck111">
+                    Active checkbox
                 </label>
             </div>
-            <button type="submit" class="btn-primary hover-shine">Submit</button>
-        </form>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Input with icon</h3>
-        <div class="form-group">
-            <label for="exampleInputIcon1">Icon Left</label>
-            <div class="input-group mb-4">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"><span class="fas fa-search"></span></span>
-                </div>
-                <input class="form-control" id="exampleInputIcon1" placeholder="Icon Left" type="text" aria-label="Input with icon left">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputIcon2">Icon Right</label>
-            <div class="input-group mb-4">
-                <input class="form-control" id="exampleInputIcon2" placeholder="Icon Right" aria-label="Input group" type="text">
-                <div class="input-group-append">
-                    <span class="input-group-text"><span class="fas fa-search"></span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Validation</h3>
-        <div class="form-group mb-4">
-            <label for="validationServer01">First name</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-            <div class="valid-feedback text-muted">
-                Looks good!
-            </div>
-        </div>
-        <div class="form-group mb-4">
-            <label for="validationServerUsername">Username</label>
-            <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
-            <div class="invalid-feedback text-muted">
-                Please choose a username.
-            </div>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Select Input</h3>
-        <div class="form-group">
-            <label class="mb-4 mr-2" for="inlineFormCustomSelectPref">Country</label>
-            <select class="custom-select my-1" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">United States</option>
-                <option value="2">Germany</option>
-                <option value="3">Canada</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Multiple Select</h3>
-        <div class="form-group">
-            <label class="mb-4" for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="custom-select" id="exampleFormControlSelect2">
-            <option>Bootstrap</option>
-            <option>VueJs</option>
-            <option>Angular</option>
-            <option>React</option>
-            <option>NodeJs</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Textarea</h3>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea2">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">File upload</h3>
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile">
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Checkboxes squared</h3>
-        <div class="form-check square-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck111" checked>
-            <label class="form-check-label" for="defaultCheck111">
-                Active checkbox
-            </label>
-        </div>
-        <div class="form-check square-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck222">
-            <label class="form-check-label" for="defaultCheck222">
-                Option 1
-            </label>
-        </div>
-        <div class="form-check square-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck333">
-            <label class="form-check-label" for="defaultCheck333">
-                Option 2
-            </label>
-        </div>
-        <div class="form-check square-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck444" disabled>
-            <label class="form-check-label" for="defaultCheck444">
-                Disabled checkbox
-            </label>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Checkboxes rounded</h3>
-        <div class="form-check rounded mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck555" checked>
-            <label class="form-check-label" for="defaultCheck555">
-                Active checkbox
-            </label>
-        </div>
-        <div class="form-check rounded mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck666">
-            <label class="form-check-label" for="defaultCheck666">
-                Option 1
-            </label>
-        </div>
-        <div class="form-check rounded mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck777">
-            <label class="form-check-label" for="defaultCheck777">
-                Option 2
-            </label>
-        </div>
-        <div class="form-check rounded mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck888" disabled>
-            <label class="form-check-label" for="defaultCheck888">
-                Disabled checkbox
-            </label>
-        </div>
-    </div>
-
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Radio buttons</h3>
-        <fieldset>
-            <legend class="h6">Radios</legend>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
+            <div class="form-check square-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck222">
+                <label class="form-check-label" for="defaultCheck222">
+                    Option 1
                 </label>
-                </div>
+            </div>
+            <div class="form-check square-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck333">
+                <label class="form-check-label" for="defaultCheck333">
+                    Option 2
+                </label>
+            </div>
+            <div class="form-check square-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck444" disabled>
+                <label class="form-check-label" for="defaultCheck444">
+                    Disabled checkbox
+                </label>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Checkboxes rounded</h3>
+            <div class="form-check rounded mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck555" checked>
+                <label class="form-check-label" for="defaultCheck555">
+                    Active checkbox
+                </label>
+            </div>
+            <div class="form-check rounded mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck666">
+                <label class="form-check-label" for="defaultCheck666">
+                    Option 1
+                </label>
+            </div>
+            <div class="form-check rounded mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck777">
+                <label class="form-check-label" for="defaultCheck777">
+                    Option 2
+                </label>
+            </div>
+            <div class="form-check rounded mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck888" disabled>
+                <label class="form-check-label" for="defaultCheck888">
+                    Disabled checkbox
+                </label>
+            </div>
+        </div>
+        <div class="w-20"></div>
+    </div>
+
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Radio buttons</h3>
+            <fieldset>
+                <legend class="h6">Radios</legend>
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Second default radio
-                </label>
-                </div>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                    Disabled radio
-                </label>
-                </div>
-        </fieldset>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                    </label>
+                    </div>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                    </label>
+                    </div>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                    <label class="form-check-label" for="exampleRadios3">
+                        Disabled radio
+                    </label>
+                    </div>
+            </fieldset>
+        </div>
+        <div class="w-20"></div>
     </div>
 
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Switches</h3>
-        <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-            <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-            </div>
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Switches</h3>
             <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-            <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                </div>
+                <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+            </div>
         </div>
+        <div class="w-20"></div>
     </div>
 
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Range slider</h3>
-        <div class="row mb-4 mb-lg-5">
-            <div class="col-12 col-md-6">
-                <!-- Simple slider -->
-                <div class="input-slider-container">
-                    <div id="input-slider-forms" class="input-slider" data-range-value-min="100" data-range-value-max="500"></div>
-                    <!-- Input slider values -->
-                    <div class="row mt-3 d-none">
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Range slider</h3>
+            <div class="row mb-4 mb-lg-5">
+                <div class="col-12 col-md-6">
+                    <!-- Simple slider -->
+                    <div class="input-slider-container">
+                        <div id="input-slider-forms" class="input-slider" data-range-value-min="100" data-range-value-max="500"></div>
+                        <!-- Input slider values -->
+                        <div class="row mt-3 d-none">
+                            <div class="col-6">
+                                <span class="range-slider-value" data-range-value-low="200"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Slider -->
+                </div>
+                <!-- Range slider -->
+                <div class="col-12 col-md-6">
+                    <!-- Range slider container -->
+                    <div id="input-slider-range" data-range-value-min="100" data-range-value-max="500"></div>
+                    <!-- Range slider values -->
+                    <div class="row d-none">
                         <div class="col-6">
-                            <span class="range-slider-value" data-range-value-low="200"></span>
+                            <span class="range-slider-value value-low" data-range-value-low="200" id="input-slider-range-value-low"></span>
+                        </div>
+                        <div class="col-6 text-right">
+                            <span class="range-slider-value value-high" data-range-value-high="400" id="input-slider-range-value-high"></span>
                         </div>
                     </div>
+                    <!-- End of range slider values -->
                 </div>
-                <!-- End of Slider -->
-            </div>
-            <!-- Range slider -->
-            <div class="col-12 col-md-6">
-                <!-- Range slider container -->
-                <div id="input-slider-range" data-range-value-min="100" data-range-value-max="500"></div>
-                <!-- Range slider values -->
-                <div class="row d-none">
-                    <div class="col-6">
-                        <span class="range-slider-value value-low" data-range-value-low="200" id="input-slider-range-value-low"></span>
-                    </div>
-                    <div class="col-6 text-right">
-                        <span class="range-slider-value value-high" data-range-value-high="400" id="input-slider-range-value-high"></span>
-                    </div>
-                </div>
-                <!-- End of range slider values -->
             </div>
         </div>
+        <div class="w-20"></div>
     </div>
 
-    <div class="spacer-container">
-        <h3 class="text-dark neo-p-m-spe">Date selectors</h3>
-        <div class="row">
-            <div class="col-12">
-                <!-- Form -->
-                <div class="form-group">
-                    <label class="h6" for="exampleInputDate1">Choose a date</label>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
+    <div class="row">
+        <div class="w-20"></div>
+        <div class="spacer-container w-60">
+            <h3 class="text-dark neo-p-m-spe">Date selectors</h3>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Form -->
+                    <div class="form-group">
+                        <label class="h6" for="exampleInputDate1">Choose a date</label>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
+                            </div>
+                            <input class="form-control datepicker" id="exampleInputDate1" placeholder="Select date" type="text" aria-label="Date with icon left">
                         </div>
-                        <input class="form-control datepicker" id="exampleInputDate1" placeholder="Select date" type="text" aria-label="Date with icon left">
                     </div>
+                    <!-- End of Form -->
                 </div>
-                <!-- End of Form -->
-            </div>
-            <div class="col-12">
-                <!-- Form -->
-                <div class="input-daterange datepicker row align-items-center">
-                    <div class="col">
-                        <label class="h6" for="exampleInputDate2">From</label>
-                        <div class="form-group">
-                            <div class="input-group input-group-border">
-                                <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
-                                <input class="form-control datepicker" id="exampleInputDate2" placeholder="Start date" type="text">
+                <div class="col-12">
+                    <!-- Form -->
+                    <div class="input-daterange datepicker row align-items-center">
+                        <div class="col">
+                            <label class="h6" for="exampleInputDate2">From</label>
+                            <div class="form-group">
+                                <div class="input-group input-group-border">
+                                    <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
+                                    <input class="form-control datepicker" id="exampleInputDate2" placeholder="Start date" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="h6" for="exampleInputDate3">To</label>
+                                <div class="input-group input-group-border">
+                                    <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
+                                    <input class="form-control datepicker" id="exampleInputDate3" placeholder="End date" type="text">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <label class="h6" for="exampleInputDate3">To</label>
-                            <div class="input-group input-group-border">
-                                <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
-                                <input class="form-control datepicker" id="exampleInputDate3" placeholder="End date" type="text">
-                            </div>
-                        </div>
-                    </div>
+                    <!-- End of Form -->
                 </div>
-                <!-- End of Form -->
             </div>
         </div>
+        <div class="w-20"></div>
     </div>
+</div>
+
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+<div class="row">
+    <div class="w-20"></div>
+
+    <div class="w-20"></div>
+</div>
+
+
 
 <!--
 :::'###::::'##:::::::'########:'########::'########::'######::
